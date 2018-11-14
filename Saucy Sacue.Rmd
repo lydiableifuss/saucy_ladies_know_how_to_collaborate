@@ -11,5 +11,17 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(tidyverse)
+
+
 ```
+
+```{r}
+
+graph <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width))+
+  geom_point()
+
+graph
+
+```
+
 
