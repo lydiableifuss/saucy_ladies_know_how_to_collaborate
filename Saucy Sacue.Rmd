@@ -20,7 +20,8 @@ library(tidyverse)
 graph <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width))+
   geom_point(aes(color = Species)) +
   theme_classic() +
-  labs(x= "Petal Length Test Label", y = "Petal Width Example Label") 
+  labs(x= "Petal Length Test Label", y = "Petal Width Example Label")+
+  facet_wrap(~Species)
   
 graph
 
